@@ -45,19 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-iter-ops-divide
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import iterDivide from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-ops-divide@deno/mod.js';
-```
-The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-iter-ops-divide/tags). For example,
-
-```javascript
-import iterDivide from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-ops-divide@v0.1.1-deno/mod.js';
+var iterDivide = require( '@stdlib/math-iter-ops-divide' );
 ```
 
 #### iterDivide( iter0, ...iterator )
@@ -65,7 +76,7 @@ import iterDivide from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-ops-divi
 Returns an [iterator][mdn-iterator-protocol] which performs element-wise division of two or more [iterators][mdn-iterator-protocol].
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var it1 = array2iterator( [ 3.0, 2.0 ] );
 var it2 = array2iterator( [ 1.0, 4.0 ] );
@@ -91,7 +102,7 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 If provided a numeric value as an [`iterator`][mdn-iterator-protocol] argument, the value is broadcast as an **infinite** [iterator][mdn-iterator-protocol] which **always** returns the provided value.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var arr = array2iterator( [ 1.0, 2.0 ] );
 
@@ -135,8 +146,8 @@ var bool = it.next().done;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import iterSineWave from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-sine-wave@deno/mod.js';
-import iterDivide from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-ops-divide@deno/mod.js';
+var iterSineWave = require( '@stdlib/simulate-iter-sine-wave' );
+var iterDivide = require( '@stdlib/math-iter-ops-divide' );
 
 // Create an iterator which generates a sine wave:
 var sine = iterSineWave({
@@ -196,7 +207,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -213,7 +224,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -226,8 +237,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/math-iter-ops-divide.svg
 [npm-url]: https://npmjs.org/package/@stdlib/math-iter-ops-divide
 
-[test-image]: https://github.com/stdlib-js/math-iter-ops-divide/actions/workflows/test.yml/badge.svg?branch=v0.1.1
-[test-url]: https://github.com/stdlib-js/math-iter-ops-divide/actions/workflows/test.yml?query=branch:v0.1.1
+[test-image]: https://github.com/stdlib-js/math-iter-ops-divide/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/math-iter-ops-divide/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/math-iter-ops-divide/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/math-iter-ops-divide?branch=main
@@ -260,11 +271,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/iter/ops/add]: https://github.com/stdlib-js/math-iter-ops-add/tree/deno
+[@stdlib/math/iter/ops/add]: https://github.com/stdlib-js/math-iter-ops-add
 
-[@stdlib/math/iter/ops/divide]: https://github.com/stdlib-js/math-iter-ops-divide/tree/deno
+[@stdlib/math/iter/ops/divide]: https://github.com/stdlib-js/math-iter-ops-divide
 
-[@stdlib/math/iter/ops/multiply]: https://github.com/stdlib-js/math-iter-ops-multiply/tree/deno
+[@stdlib/math/iter/ops/multiply]: https://github.com/stdlib-js/math-iter-ops-multiply
 
 <!-- </related-links> -->
 
