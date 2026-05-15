@@ -193,7 +193,7 @@ while ( true ) {
 ## See Also
 
 -   <span class="package-name">[`@stdlib/math-iter/ops/add`][@stdlib/math/iter/ops/add]</span><span class="delimiter">: </span><span class="description">create an iterator which performs element-wise addition of two or more iterators.</span>
--   <span class="package-name">[`@stdlib/math-iter/ops/divide`][@stdlib/math/iter/ops/divide]</span><span class="delimiter">: </span><span class="description">create an iterator which performs element-wise division of two or more iterators.</span>
+-   <span class="package-name">[`@stdlib/math-iter/ops/subtract`][@stdlib/math/iter/ops/subtract]</span><span class="delimiter">: </span><span class="description">create an iterator which performs element-wise subtraction of two or more iterators.</span>
 -   <span class="package-name">[`@stdlib/math-iter/ops/multiply`][@stdlib/math/iter/ops/multiply]</span><span class="delimiter">: </span><span class="description">create an iterator which performs element-wise multiplication of two or more iterators.</span>
 
 </section>
@@ -278,7 +278,7 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/math/iter/ops/add]: https://github.com/stdlib-js/math-iter-ops-add
 
-[@stdlib/math/iter/ops/divide]: https://github.com/stdlib-js/math-iter-ops-divide
+[@stdlib/math/iter/ops/subtract]: https://github.com/stdlib-js/math-iter-ops-subtract
 
 [@stdlib/math/iter/ops/multiply]: https://github.com/stdlib-js/math-iter-ops-multiply
 
